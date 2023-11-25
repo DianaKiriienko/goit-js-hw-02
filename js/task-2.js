@@ -2,7 +2,7 @@ function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
         return message;
     } else {
-        let cutMessage = message.slice(0, maxLength) + `...`;
+        const cutMessage = message.slice(0, maxLength) + `...`;
         return cutMessage;
     }
 }

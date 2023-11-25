@@ -1,7 +1,6 @@
 function checkForSpam(message) {
-    const bunWorld1 = `spam`;
-    const bunWorld2 = `sale`;
-if (message.toLowerCase().includes(bunWorld1) || message.toLowerCase().includes(bunWorld2)) {
+    const emailMessage = message.toLowerCase(); 
+if (emailMessage.includes(`spam`) || emailMessage.includes(`sale`)) {
     return true;
 } else {
     return false;
